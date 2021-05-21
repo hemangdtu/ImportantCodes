@@ -36,7 +36,8 @@ bool nQueen(int board[][10], int i, int n)
 			}
 			cout<<endl;
 		}
-		return true;
+		cout<<endl<<endl;
+		return false;
 	}
 
 	for(int j = 0; j < n; j++)
@@ -52,12 +53,4 @@ bool nQueen(int board[][10], int i, int n)
 	}
 
 	return false;
-}
-
-int main()
-{
-	int n;
-	cin>>n;
-	int board[10][10]={0};
-	nQueen(board,0,n);
 }
